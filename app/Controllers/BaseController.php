@@ -49,4 +49,8 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+
+    private function test() {
+        return "";
+    }
 }

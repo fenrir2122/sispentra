@@ -15,12 +15,14 @@ class DraftModel extends Model
     protected $useSoftDeletes = true;
 
     protected $allowedFields = [
+        'id_kontrak'                ,
+
         'judul_kontrak'             ,
             'tanggal_blangko'           ,
         'nama_kontraktor'           ,
 
         'sp3mk_nomor'               ,
-            'tanggal'                   ,
+            'sp3mk_tanggal'                   ,
         'sp3mk_harga_kontrak'       ,
             'sp3mk_mpp'                 ,
         'sp3mk_jaminan_pelaksanaan' ,
@@ -30,13 +32,14 @@ class DraftModel extends Model
         'sp3mk_mjenis_mpp'          ,
             'sp3mk_mjenis_jpelaksanaan' ,
 
-        'sppj_nomor'                ,
-            'sppj_tanggal'              ,
-        'sppj_harga_kontrak'        ,
-            'sppj_jangka_pelaksanaan'   ,
-        'sppj_masa_berlaku'         ,
-            'sppj_mjenis_wpelaksanaan'  ,
-        'sppj_mjenis_mjpelaksanaan' ,
+        'spppj_nomor'                ,
+            'spppj_tanggal'              ,
+        'spppj_coll_no'              ,
+            'spppj_harga_kontrak'        ,
+        'spppj_jangka_pelaksanaan'   ,
+            'spppj_masa_berlaku'         ,
+        'spppj_mjenis_pelaksanaan'  ,
+            'spppj_mjenis_berlaku'       ,
 
         'rks_revisi'                ,
             'rks_keterangan'            ,
@@ -44,16 +47,15 @@ class DraftModel extends Model
             'rks_masa_pemeliharaan'     ,
         'rks_masa_garansi'          ,
             'rks_denda'                 ,
-        'rks_max'                   ,
-            'rks_mekanisme_pembayaran'  ,
-        'rks_jenis_kontrak'         ,
-            'rks_besar_jaminan'         ,
-        'rks_direksi_pekerjaan'     ,
-            'rks_mpa'                   ,
-        'rks_mjenis_mpp'            ,
-            'rks_mjenis_pemeliharaan'   ,
-        'rks_mjenis_garansi'        ,
-            'rks_mjenis_mpa'            ,
+        'rks_mekanisme_pembayaran'  ,
+            'rks_jenis_kontrak'         ,
+        'rks_besar_jaminan'         ,
+            'rks_direksi_pekerjaan'     ,
+        'rks_mpa'                   ,
+            'rks_mjenis_mpp'            ,
+        'rks_mjenis_pemeliharaan'   ,
+            'rks_mjenis_garansi'        ,
+        'rks_mjenis_mpa'            ,
 
         'sphn_nomor'                ,
             'sphn_tanggal'              ,
@@ -74,8 +76,7 @@ class DraftModel extends Model
         'prebid_mjenis_pemeliharaan',
             'prebid_mjenis_garansi'     ,
         'prebid_jaminan_pelaksanaan',
-            'prebid_revisi_rks'         ,
-        'prebid_keterangan'         ,
+            'prebid_keterangan'         ,
     ];
 
     protected $useTimestamps = false;

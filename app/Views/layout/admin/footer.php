@@ -35,22 +35,22 @@
     <script src="<?php echo base_url('public/asset/gentelella-master/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js');?>"></script>
     <script src="<?php echo base_url('public/asset/gentelella-master/vendors/datatables.net-responsive/js/dataTables.responsive.min.js');?>"></script>
     <script src="<?php echo base_url('public/asset/gentelella-master/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js');?>"></script>
-    <script src="<?php echo base_url('public/asset/gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js');?>"></script>
-    <script src="<?php echo base_url('public/asset/gentelella-master/vendors/jszip/dist/jszip.min.js');?>"></script>
-    <script src="<?php echo base_url('public/asset/gentelella-master/vendors/pdfmake/build/pdfmake.min.js');?>"></script>
-    <script src="<?php echo base_url('public/asset/gentelella-master/vendors/pdfmake/build/vfs_fonts.js');?>"></script>
+    <!-- <script src="<?php //echo base_url('public/asset/gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js');?>"></script> -->
+    <!-- <script src="<?php //echo base_url('public/asset/gentelella-master/vendors/jszip/dist/jszip.min.js');?>"></script> -->
+    <!-- <script src="<?php //echo base_url('public/asset/gentelella-master/vendors/pdfmake/build/pdfmake.min.js');?>"></script> -->
+    <!-- <script src="<?php //echo base_url('public/asset/gentelella-master/vendors/pdfmake/build/vfs_fonts.js');?>"></script> -->
     <!-- Chart.js -->
     
-    <script src="<?php echo base_url('public/asset/gentelella-master/vendors/Chart.js/dist/Chart.min.js');?>"></script>
+    <!-- <script src="<?php //echo base_url('public/asset/gentelella-master/vendors/Chart.js/dist/Chart.min.js');?>"></script> -->
     <!-- bootstrap-datetimepicker -->    
-    <script src="<?php echo base_url('public/asset/gentelella-master/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');?>"></script>
+    <!-- <script src="<?php //echo base_url('public/asset/gentelella-master/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');?>"></script> -->
 
     <!-- Custom Theme Scripts -->
     <script src="<?php echo base_url('public/asset/gentelella-master/build/js/custom.js'); ?>"></script>
     <!-- <script src="../build/js/custom.min.js"></script> -->
     
     <!-- Initialize datetimepicker -->
-<script  type="text/javascript">
+<!-- <script  type="text/javascript">
    $(function () {
                 $('#myDatepicker').datetimepicker();
             });
@@ -81,4 +81,4 @@
     $("#datetimepicker7").on("dp.change", function(e) {
         $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
     });
-</script>
+</script> -->

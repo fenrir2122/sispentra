@@ -60,9 +60,10 @@
               //echo $jenis_kelamin;
               // $pemesanan = 'PO0001';
               // var_dump($test);
-              echo $id_kontrak."<br>";
-              echo $no_pr."<br>";
-              echo $type;
+              // echo $id_kontrak."<br>";
+              // echo $no_pr."<br>";
+              // echo $type;
+              echo var_dump($file);
               // $data = array();
               // foreach ($test['pr_no'] as $key => $value) {
               //   $data['pr_no'][$key]['no'] = 'required';

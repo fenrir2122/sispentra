@@ -42,9 +42,10 @@
                             <?php endif; ?>
                             <form method="post" action="<?= base_url() . '/public/index.php/admin/addcontract'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                                 <?= csrf_field(); ?>
-                                <pre><?php echo base_url() . '/public/index.php/admin/addcontract'; ?></pre>
+                                <!-- <pre><?php //echo base_url() . '/public/index.php/admin/addcontract'; 
+                                            ?></pre> -->
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-12 col-12">
+                                    <div class="col-lg-6">
                                         <div class="item form-group">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Bidding Code<span class="required">*</span>
                                             </label>
@@ -83,13 +84,11 @@
                                                         <option value="0">OLD</option>
                                                         <option value="1">NEW</option>
                                                     </select>
-                                                    <button id="addRow" type="button" class="btn btn-info ml-2"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                                    <button id="addRow" type="button" class="btn btn-info ml-2 col-2"><i class="fa fa-plus" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div id="newRow"></div>
                                             </div>
                                         </div>
-                                        <input type="hidden" name="test[]" required="required" class="form-control ">
-                                        <input type="hidden" name="test[]" required="required" class="form-control ">
                                         <div class="item form-group">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Nomor Coll<span class="required">*</span>
                                             </label>
@@ -122,7 +121,7 @@
                                         <div class="item form-group">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Durasi<span class="required">*</span>
                                             </label>
-                                            <div class="col-md-4 col-sm-4 ">
+                                            <div class="col-md-6 col-sm-4 ">
                                                 <input type="text" name="durasi" id="durasi" required="required" class="form-control ">
                                             </div>
                                             <div class="col-md-2 col-sm-2 col-4">
@@ -155,7 +154,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-12">
+                                    <div class="col-lg-6">
                                         <div class="item form-group">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">PO Pengganti</span>
                                             </label>

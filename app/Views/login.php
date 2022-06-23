@@ -1,141 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="height: 100%" lang="en">
 
 <head>
-  <!-- header -->
-  <?php $this->load->view('layout/admin/header_admin'); ?>
-  <!-- /header -->
+	<!-- <meta charset="utf-8"> -->
+	<!-- <meta name="author" content="Kodinger"> -->
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+	<!-- <title>My Login Page</title> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<!-- header -->
+	<?php echo view('layout/admin/header_admin'); ?>
+	<link href="<?php echo base_url('public/asset/bootstrap/scss/bootstrap.min.css'); ?>" rel="stylesheet">
+
+	<!-- /header -->
+	<!-- <script src="<?php //echo base_url('public/asset/css/my-login.css'); 
+						?>"></script> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/my-login.css"> -->
 </head>
 
-<body>
-  <div class="row justify-content-center">
-    <div class="col-md-6 col-sm-6 ">
-      <div class="x_panel">
-        <div class="x_title">
-          <h2>Login</h2>
-          <div class="clearfix"></div>
-        </div>
-        <div class="x_content">
-          <br />
-          <form method="post" action="<?php echo base_url() . 'index.php/login/'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+<body style="height: 100%; background: url(<?php echo base_url('public/asset/img/office-g932d71e71_1920.jpg'); ?>" class="bg-light">
+	<div class="container" style="height: 80%">
+		<div class="row h-100 justify-content-center">
+			<div class="col-xl-8 col-10 align-self-center">
 
-            <br>
-            <div class="item form-group">
-              <label class="col-form-label col-md-3 col-sm-3 label-align" for="role">Role
-              </label>
-              <div class="col-md-6 col-sm-6 ">
-                <select class="selectpicker form-control" data-live-search="true" id="role" name="role" data-live-search="true">
-                  <option value="Admin">Admin</option>
-                  <option value="Staff">Staff</option>
-                </select>
-              </div>
-            </div>
-            </br>
-            <div class="item form-group">
-              <label class="col-form-label col-md-3 col-sm-3 label-align">NIK
-              </label>
-              <div class="col-md-6 col-sm-6 ">
-                <input name="nik" id="nik" class="form-control" required="required" type="text">
-              </div>
-            </div>
-            <div class="item form-group">
-              <label class="col-form-label col-md-3 col-sm-3 label-align">Password
-              </label>
-              <div class="col-md-6 col-sm-6 ">
-                <input name="password" id="password" class="form-control" required="required" type="password">
-              </div>
-            </div>
+				<h6 class="text-white">powered by</h6>
+				<div class="card shadow-lg">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img src="<?php echo base_url('public/asset/img/background-3301487.jpg'); ?>" style="height: 100%" class="card-img img-responsive" alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<div class="card-title blue text-center mb-5">
+									<small>SISPENTRA</small><br />
+									<h6>Sign In</h6>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<form method="post" action="<?= base_url() . '/public/index.php/login/signin'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+											<?= csrf_field(); ?>
+											<div class="form-row">
+												<div class="form-group col-12">
+													<?php if (isset($error)) { ?>
+														<div class="alert alert-danger text-center" role="alert">
+															<?= "<small>".$error."</small>"?>
+														</div>
+													<?php } ?>
+													<!-- <label for="email">Email</label> -->
+													<input type="email" name="email" class="form-control <?php if (isset($email) && $email != null) {
+																								echo 'is-invalid';
+																							} ?>" id="email" placeholder="E-mail" required>
+													<div class="invalid-feedback">
+														<?php if (isset($email) && $email != null) {
+															echo $email;
+														} ?>
+													</div>
+												</div>
+												<div class="form-group col-12">
+													<!-- <label for="password">Password</label> -->
+													<input type="password" name="password" class="form-control <?php if (isset($password) && $password != null) {
+																									echo 'is-invalid';
+																								} ?>" id="password" placeholder="Password" required>
+													<div class="invalid-feedback">
+														<?php if (isset($password) && $password != null) {
+															echo $password;
+														} ?>
+													</div>
+												</div>
+												<div class="col-12 text-center">
+													<button type="submit" class="btn btn-dark mt-3">Login</button>
+												</div>
+												<div class="col-12 text-right">
+													<small><a href="<?= base_url().'/public/index.php/fpassword'?>">Forgot Password?</a></small>
+												</div>
+											</div>
+										</form>
+										<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="mt-3 text-center text-white">Don't have an account? Create <a href="<?= base_url().'/public/index.php/register'?>">here</a></p>
+			</div>
+		</div>
+	</div>
 
-            <div class="ln_solid"></div>
-            <div class="item form-group">
-              <div class="col-md-6 col-sm-6 offset-md-3">
-                <button class="btn btn-primary" type="reset">Reset</button>
-                <button type="submit" class="btn btn-success">Login</button>
-              </div>
-              <div class="col-md-3 col-sm-3">
-                <a href="<?php echo site_url() . '/login/registrasi/'; ?>" class="btn btn-primary" role="button"> Registrasi</a>
-              </div>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- jQuery -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/jquery/dist/jquery.min.js'); ?>"></script>
-  <!-- <script src="../vendors/jquery/dist/jquery.min.js"></script> -->
-  <!-- Bootstrap -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js'); ?>"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-  <!-- <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-  <!-- FastClick -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/fastclick/lib/fastclick.js'); ?>"></script>
-  <!-- <script src="../vendors/fastclick/lib/fastclick.js"></script> -->
-  <!-- NProgress -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/nprogress/nprogress.js'); ?>"></script>
-  <!-- <script src="../vendors/nprogress/nprogress.js"></script> -->
-  <!-- bootstrap-progressbar -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js'); ?>"></script>
-  <!-- Datatables -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net/js/jquery.dataTables.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-buttons/js/dataTables.buttons.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-buttons/js/buttons.flash.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-buttons/js/buttons.html5.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-buttons/js/buttons.print.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-responsive/js/dataTables.responsive.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/jszip/dist/jszip.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/pdfmake/build/pdfmake.min.js'); ?>"></script>
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/pdfmake/build/vfs_fonts.js'); ?>"></script>
-  <!-- Chart.js -->
-
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/Chart.js/dist/Chart.min.js'); ?>"></script>
-  <!-- bootstrap-datetimepicker -->
-  <script src="<?php echo base_url('asset/gentelella-master/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'); ?>"></script>
-
-  <!-- Custom Theme Scripts -->
-  <script src="<?php echo base_url('asset/gentelella-master/build/js/custom.js'); ?>"></script>
-  <!-- <script src="../build/js/custom.min.js"></script> -->
-
-  <!-- Initialize datetimepicker -->
-  <script type="text/javascript">
-    $(function() {
-      $('#myDatepicker').datetimepicker();
-    });
-
-    $('#myDatepicker2').datetimepicker({
-      format: 'DD.MM.YYYY'
-    });
-
-    $('#myDatepicker3').datetimepicker({
-      format: 'hh:mm A'
-    });
-
-    $('#myDatepicker4').datetimepicker({
-      ignoreReadonly: true,
-      allowInputToggle: true
-    });
-
-    $('#datetimepicker6').datetimepicker();
-
-    $('#datetimepicker7').datetimepicker({
-      useCurrent: false
-    });
-
-    $("#datetimepicker6").on("dp.change", function(e) {
-      $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-    });
-
-    $("#datetimepicker7").on("dp.change", function(e) {
-      $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-    });
-  </script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="<?php //echo base_url('public/asset/js/my-login.js'); 
+						?>"></script> -->
+	<!-- <script src="js/my-login.js"></script> -->
 </body>
 
 </html>

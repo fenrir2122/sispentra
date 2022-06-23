@@ -60,6 +60,13 @@
                                             </div>
                                         </div>
                                         <div class="item form-group">
+                                            <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Amandemen ke-<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-8 col-sm-8 ">
+                                                <input type="text" name="amandemen_ke" required="required" class="form-control ">
+                                            </div>
+                                        </div>
+                                        <div class="item form-group">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align">Tanggal Mulai<span class="required">*</span>
                                             </label>
                                             <div class="col-md-8 col-sm-8 ">
@@ -73,13 +80,15 @@
                                                 <input name="tgl_selesai" class="form-control" required="required" type="date">
                                             </div>
                                         </div>
-                                        <div class="item form-group">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="item form-group align-items-center">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Durasi<span class="required">*</span>
                                             </label>
                                             <div class="col-md-8 col-sm-8 ">
                                                 <div class="input-group">
                                                     <input type="text" name="durasi" required="required" class="form-control col-8">
-                                                    <select class="form-control col-4 ml-2" name="jenis_durasi">
+                                                    <select class="form-control col-4" name="jenis_durasi">
                                                         <option value="HKL">HKL</option>
                                                         <option value="BLN">BLN</option>
                                                         <option value="THN">THN</option>
@@ -87,8 +96,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
+                                        <div class="item form-group">
+                                            <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Vendor<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-8 col-sm-8 ">
+                                                <input type="text" name="vendor" required="required" class="form-control ">
+                                            </div>
+                                        </div>
                                         <div class="item form-group">
                                             <label class="col-form-label col-md-4 col-sm-4 col-4 label-align" for="first-name">Nomor PO</span>
                                             </label>

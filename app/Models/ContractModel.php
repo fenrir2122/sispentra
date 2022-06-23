@@ -16,7 +16,6 @@ class ContractModel extends Model
 
     protected $allowedFields = [
         'bidding_code',
-        'pr_no',
         'nama_pekerjaan',
         'tgl_permintaan_lelang',
         'tgl_penetapan',
@@ -49,4 +48,11 @@ class ContractModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
+    public function getJoinContractPR()
+    {
+        $db      = \Config\Database::connect();
+        $query = $db->query("SELECT kontrak.*,GROUP_CONCAT(kode_pr.no_pr SEPARATOR ' ') as _no_pr FROM kontrak JOIN kode_pr ON kode_pr.id_kontrak = kontrak.id_kontrak WHERE kode_pr.deleted_at = '0000-00-00 00:00:00'");
+        return $query->getResult('array');
+    }
 }

@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class NovationModel extends Model
 {
-    protected $table      = 'novasi';
+    protected $table      = 'novation';
     protected $primaryKey = 'id_novasi';
 
     protected $useAutoIncrement = true;

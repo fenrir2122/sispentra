@@ -21,7 +21,7 @@
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Amendment</h3>
+                    <h3>Novation</h3>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@
                 <div class="col-md-12 col-sm-12 ">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Add New Amendment</h2>
+                            <h2>Add New Novation</h2>
                             <div class="clearfix"></div>
                         </div>
                         <div class="x_content">
@@ -40,9 +40,9 @@
                             <?php if (!empty(session()->getFlashdata('error'))) : ?>
                                 <?php echo session()->getFlashdata('error'); ?>
                             <?php endif; ?>
-                            <form method="post" action="<?= base_url() . '/public/index.php/admin/addamendment'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <form method="post" action="<?= base_url() . '/public/index.php/admin/addnovation'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                                 <?= csrf_field(); ?>
-                                <pre><?php echo base_url() . '/public/index.php/admin/addamendment'; ?></pre>
+                                <pre><?php echo base_url() . '/public/index.php/admin/addnovation'; ?></pre>
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12 col-12">
                                         <div class="item form-group">

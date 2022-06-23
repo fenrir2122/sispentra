@@ -17,7 +17,7 @@ class PRModel extends Model
     protected $allowedFields = [
         'id_kontrak',
         'no_pr',
-        'type',
+        'tipe',
     ];
 
     protected $useTimestamps = false;

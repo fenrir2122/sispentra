@@ -26,6 +26,11 @@ body {
 .login form {
 	margin: 10px 20px;
 }
+
+.fill {
+	height: 100%;
+	min-height: 100%;
+}
 .full {
 	width: 100%;
 	font-weight: bold;

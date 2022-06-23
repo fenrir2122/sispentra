@@ -28,7 +28,7 @@
     <link href="<?php echo base_url('public/asset/gentelella-master/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css');?>" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="<?php echo base_url('public/asset/gentelella-master/build/css/custom.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('public/asset/gentelella-master/build/css/custom.css'); ?>" rel="stylesheet">
     <!-- <link href="../build/css/custom.min.css" rel="stylesheet"> -->
 
     <!-- DataTables -->
@@ -41,4 +41,4 @@
     
 
     <!-- Chart.js -->
-    <script src="<?php echo base_url('public/giasset/gentelella-master/vendors/Chart.js/dist/Chart.min.js');?>"></script>
+    <!-- <script src="<?php //echo base_url('public/giasset/gentelella-master/vendors/Chart.js/dist/Chart.min.js');?>"></script> -->

@@ -40,7 +40,7 @@
                             <?php if (!empty(session()->getFlashdata('error'))) : ?>
                                 <?php echo session()->getFlashdata('error'); ?>
                             <?php endif; ?>
-                            <form method="post" action="<?= base_url() . '/public/index.php/admin/editamendment/'.$id_amandemen; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <form method="post" action="<?= base_url() . '/public/index.php/admin/editnovation/'.$id_novasi; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                                 <?= csrf_field(); ?>
                                 <pre><?php echo base_url() . '/public/index.php/admin/addcontracts'; ?></pre>
                                 <div class="row">
