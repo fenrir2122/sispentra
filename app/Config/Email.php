@@ -54,14 +54,14 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPUser='ofboundary@gmail.com';
+    public $SMTPUser='user';
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass='xcvs87ss';
+    public $SMTPPass='pass';
 
     /**
      * SMTP Port
