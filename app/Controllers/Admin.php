@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\PRModel;
+use App\Controllers\BaseController;
 
 class Admin extends BaseController
 {
@@ -50,6 +51,8 @@ class Admin extends BaseController
             // $pr_no = array_intersect_assoc($kontrak, $pr);
             // $data['kontrak'][$key]['no_pr'] = $pr_no;
         // }
+
+        // return parent::test();
 
         // Load view
         echo view('admin/contract/contract_list', $data);

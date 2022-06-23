@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Font Awesome -->
-    <link href="<?php echo base_url('public/asset/gentelella-master/vendors/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <!-- <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- iCheck -->
     <link href="<?php echo base_url('public/asset/gentelella-master/vendors/iCheck/skins/flat/green.css'); ?>" rel="stylesheet">

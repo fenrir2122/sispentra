@@ -40,9 +40,9 @@
                             <?php if (!empty(session()->getFlashdata('error'))) : ?>
                                 <?php echo session()->getFlashdata('error'); ?>
                             <?php endif; ?>
-                            <form method="post" action="<?= base_url() . '/public/index.php/admin/addcontract'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <form method="post" action="<?= base_url() . 'admin/addcontract'; ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                                 <?= csrf_field(); ?>
-                                <!-- <pre><?php //echo base_url() . '/public/index.php/admin/addcontract'; 
+                                <!-- <pre><?php //echo base_url() . '/admin/addcontract'; 
                                             ?></pre> -->
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -324,10 +324,10 @@
 
     <!-- footer -->
     <?php echo view('layout/admin/footer.php'); ?>
-    <script src="../../../public/asset/gentelella-master/vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-    <script src="../../../public/asset/js/addinputs.js"></script>
-    <script src="../../../public/asset/js/currency.js"></script>
-    <script src="../../../public/asset/js/percentage.js"></script>
+    <script src=<?php echo base_url()."/public/asset/gentelella-master/vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"?>></script>
+    <script src=<?php echo base_url()."/public/asset/js/addinputs.js"?>></script>
+    <script src=<?php echo base_url()."/public/asset/js/currency.js"?>></script>
+    <script src=<?php echo base_url()."/public/asset/js/percentage.js"?>></script>
     <!-- /footer -->
 </body>
 

@@ -2,13 +2,6 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
-use CodeIgniter\HTTP\CLIRequest;
-use CodeIgniter\HTTP\IncomingRequest;
-use CodeIgniter\HTTP\RequestInterface;
-use CodeIgniter\HTTP\ResponseInterface;
-use Psr\Log\LoggerInterface;
-
 /**
  * Class BaseController
  *
@@ -19,7 +12,7 @@ use Psr\Log\LoggerInterface;
  *
  * For security be sure to declare any new methods as protected or private.
  */
-class BaseController extends Controller
+class MainController
 {
     /**
      * Instance of the main Request object.
@@ -41,7 +34,7 @@ class BaseController extends Controller
      * Constructor.
      */
 
-    protected function test() {
-        return "test";
+    private function test() {
+        return "";
     }
 }

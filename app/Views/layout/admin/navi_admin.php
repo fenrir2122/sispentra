@@ -7,26 +7,26 @@
                                 ?>"><i class="fa fa-sitemap"></i> User</a></li> -->
             <li><a><i class="fa fa-user"></i> Users <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo base_url('public/index.php/admin/user'); ?>"><i class="fa fa-user-md"></i> Users</a></li>
-                    <li><a href="<?php echo base_url('public/index.php/admin/user/adduser'); ?>"><i class="fa fa-user-plus"></i> Input User</a></li>
+                    <li><a href="<?php echo base_url('admin/user'); ?>"><i class="fa fa-user-md"></i> Users</a></li>
+                    <li><a href="<?php echo base_url('admin/user/adduser'); ?>"><i class="fa fa-user-plus"></i> Input User</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-book"></i> Contracts <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo base_url('public/index.php/admin/contract'); ?>"><i class="fa fa-shopping-cart"></i> Contracts</a></li>
-                    <li><a href="<?php echo base_url('public/index.php/admin/addcontract'); ?>"><i class="fa fa-cart-plus"></i> Input Contract</a></li>
+                    <li><a href="<?php echo base_url('admin/contract'); ?>"><i class="fa fa-shopping-cart"></i> Contracts</a></li>
+                    <li><a href="<?php echo base_url('admin/addcontract'); ?>"><i class="fa fa-cart-plus"></i> Input Contract</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-credit-card"></i> Amandments <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo base_url('public/index.php/admin/amendment'); ?>"><i class="fa fa-line-chart"></i> Amendments</a></li>
-                    <li><a href="<?php echo base_url('public/index.php/admin/addamendment'); ?>"><i class="fa fa-usd"></i> Input Amendment</a></li>
+                    <li><a href="<?php echo base_url('admin/amendment'); ?>"><i class="fa fa-line-chart"></i> Amendments</a></li>
+                    <li><a href="<?php echo base_url('admin/addamendment'); ?>"><i class="fa fa-usd"></i> Input Amendment</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-briefcase"></i> Novations <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo base_url('public/index.php/admin/novation'); ?>"><i class="fa fa-file-text"></i> Novations</a></li>
-                    <li><a href="<?php echo base_url('index.php/admin/admin/addnovation'); ?>"><i class="fa fa-cubes"></i> Input Novation</a></li>
+                    <li><a href="<?php echo base_url('admin/novation'); ?>"><i class="fa fa-file-text"></i> Novations</a></li>
+                    <li><a href="<?php echo base_url('admin/addnovation'); ?>"><i class="fa fa-cubes"></i> Input Novation</a></li>
                 </ul>
             </li>
         </ul>
